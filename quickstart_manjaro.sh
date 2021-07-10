@@ -25,7 +25,7 @@ sudo sed 's/^#Color/Color/' -i /etc/pacman.conf #kolory w pacmanie
 sudo pacman-mirrors --fasttrack
 sudo pacman -Syyu
 sudo pacman -Syu
-sudo pacman -S base-devel x11-ssh-askpass fish python-pip python-wxpython jre-openjdk libreoffice-fresh gcc-fortran r yay gimp flatpak caprine calibre flameshot gparted htop qbittorrent vlc etcher pdftk virtualbox aspell hspell libvoikko --needed
+sudo pacman -S base-devel x11-ssh-askpass fish python-pip python-wxpython jre-openjdk libstdc++5 libreoffice-fresh gcc-fortran r yay gimp flatpak caprine calibre flameshot gparted htop qbittorrent vlc etcher pdftk virtualbox aspell hspell libvoikko --needed
 yay -S google-chrome rstudio-desktop-bin zotero anki-official-binary-bundle p3x-onenote ttf-times-new-roman ttf-windows virtualbox-ext-oracle visual-studio-code-bin --needed
 sudo usermod -aG vboxusers $USER
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
