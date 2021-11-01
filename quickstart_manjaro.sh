@@ -25,7 +25,7 @@ sudo sed 's/^#ParallelDownloads/ParallelDownloads/' -i /etc/pacman.conf #jednocz
 sudo pacman-mirrors --fasttrack
 sudo pacman -Syyu
 sudo pacman -S base-devel x11-ssh-askpass fish python-pip python-wxpython jre-openjdk libstdc++5 flite libreoffice-fresh gcc-fortran r yay gimp flatpak calibre flameshot gparted htop qbittorrent vlc etcher pdftk virtualbox aspell hspell libvoikko wine wine-mono winetricks scribus --needed
-yay -S google-chrome rstudio-desktop-bin zotero anki-official-binary-bundle ttf-times-new-roman ttf-windows virtualbox-ext-oracle visual-studio-code-bin plasma5-applets-eventcalendar --needed
+yay -S google-chrome rstudio-desktop-bin zotero anki-official-binary-bundle ttf-times-new-roman ttf-windows visual-studio-code-bin plasma5-applets-eventcalendar --needed
 sudo usermod -aG vboxusers $USER
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 yay -S spotify --needed #problemy z kluczem
