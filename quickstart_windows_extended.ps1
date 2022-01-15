@@ -12,8 +12,9 @@ wget "https://download.brother.com/welcome/dlf004452/dcp-j315w-inst-B1-cd5.EXE" 
 
 # Minimum programów ----
 choco install googlechrome --ignore-checksums -y
-choco install grep sed awk gsudo oh-my-posh jre8 adobereader 7zip irfanview irfanviewplugins k-litecodecpackbasic driverbooster avastfreeantivirus kate steam-client python r r.studio jamovi kdeconnect-kde git gh freshbing zoom microsoft-teams discord spotify gimp calibre qbittorrent vlc zotero anki -y
+choco install grep sed awk gsudo oh-my-posh jre8 adobereader 7zip irfanview irfanviewplugins k-litecodecpackbasic driverbooster kate steam-client python r r.studio jamovi kdeconnect-kde git gh freshbing zoom microsoft-teams discord spotify gimp calibre qbittorrent vlc zotero anki -y
 choco install office2019proplus --params '/Language:pl-pl' -y
+choco install avastfreeantivirus --ignore-checksums -y
 refreshenv
 
 # Restart ----
