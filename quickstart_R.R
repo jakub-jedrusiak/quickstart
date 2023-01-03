@@ -1,4 +1,4 @@
-if(!require("pacman")) install.packages("pacman") # nolint
+if (!require("pacman")) install.packages("pacman")
 
 pacman::p_load(
     tidyverse, magrittr, rstatix, psych, # data wrangling
