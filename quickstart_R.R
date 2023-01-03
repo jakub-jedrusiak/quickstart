@@ -1,15 +1,19 @@
-install.packages("pacman")
-pacman::p_install(
+if(!require("pacman")) install.packages("pacman") # nolint
+
+pacman::p_load(
     tidyverse, magrittr, rstatix, psych, # data wrangling
     caret, lavaan, ranger, ClusterR, modelbased, robust, # modelling
     httpgd, lintr, languageserver, # vcode
     DBI, dbplyr, RMariaDB, # database utilities
     broom, lm.beta, # model exploration
-    knitr, kableExtra, learnr, rmarkdown, shiny, # reporting
+    rmarkdown, knitr, shiny, kableExtra, learnr, # reporting
     ggthemes, # plotting
-    roxygen2, testthat, devtools, rlang, # programming
-    force = FALSE
+    roxygen2, testthat, devtools, rlang # programming
     )
+
 devtools::install_github("crsh/papaja")
 devtools::install_github("jakub-jedrusiak/jedrusiakr")
+
 devtools::update_packages(upgrade = TRUE)
+
+quit(save = "no")
