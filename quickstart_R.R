@@ -12,3 +12,4 @@ pacman::p_install(
     )
 devtools::install_github("crsh/papaja")
 devtools::install_github("jakub-jedrusiak/jedrusiakr")
+devtools::update_packages(upgrade = TRUE)
