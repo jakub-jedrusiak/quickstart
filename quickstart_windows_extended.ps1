@@ -2,7 +2,7 @@
 # Set-ExecutionPolicy Bypass Process -Force
 
 # Chocolatey ----
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 refreshenv
 
 # Drukarka Brother DCP-J315W ----
@@ -18,7 +18,7 @@ choco install avastfreeantivirus --ignore-checksums -y
 refreshenv
 
 # Restart ----
-echo "Pamietaj o instalacji sterownika drukarki!"
+Write-Output "Pamietaj o instalacji sterownika drukarki!"
 $Decyzja = Read-Host "Zrestartowac komputer? (t/n)"
 if ($Decyzja -match '^[TtYy]$' ) {
     Restart-Computer
